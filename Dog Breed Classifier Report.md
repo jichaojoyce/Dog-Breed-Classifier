@@ -2,7 +2,9 @@
 ## Capstone Project
 Chao Ji 
 June 7, 2020
+
 ![Definition Pic](sample_dog_output.png)
+
 ## I. Definition
 ### Project Overview
 When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? I have definetly... To solve the real-world images classifier problem, this project uses Convolutional Neural Networks (CNNs) and transfer learning to build a pipeline to process real-world, user-supplied images. This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
@@ -21,7 +23,9 @@ Step 7: Test Your Algorithm
 
 ### Metrics
 Accuracy is a common metric for classifiers, defined as the true breed prediction among the whole predictions.
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
+<img src="https://render.githubusercontent.com/render/math?math= accuracy = \frac{true breed prediction}{dataset size}">
+
 The loss function is categorical cross-entroy loss. 
 
 ## II. Analysis
