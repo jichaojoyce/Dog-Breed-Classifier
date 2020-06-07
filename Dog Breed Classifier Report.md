@@ -75,13 +75,13 @@ The target was to to achieve a CNN with >1% accuracy. The network described abov
 * Train a CNN using transfer learning
 Several pre-trained networks models such as VGG-16, VGG-19, and ResNet-50 are used as a fixed feature extractor for use with keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
 
-![layer Pic](/doc/layers1.png)
+![layer Pic](/doc/layers1.PNG)
 
 The test accuracy using VGG-16 is 39.71%. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in below figures. The test accuracy using VGG-19 and ResNet-50 are 49.16% and 81.22% respectively. The transfer training does improve the accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
 
-![layer Pic](/doc/layers2.png)
+![layer Pic](/doc/layers2.PNG)
 
-![layer Pic](/doc/layers3.png)
+![layer Pic](/doc/layers3.PNG)
 
 * Overall classification
 
@@ -92,12 +92,19 @@ The new model using the ResNet-50 model as the first layer is well trained. Then
 ## IV. Results
 ### Model Evaluation and Validation
 Several figures are tested. 
-![layer Pic](/results/result1.png)
-![layer Pic](/results/result2.png)
-![layer Pic](/results/result3.png)
-![layer Pic](/results/result4.png)
-![layer Pic](/results/result5.png)
-![layer Pic](/results/result6.png)
+
+![layer Pic](/results/Result1.PNG)
+
+![layer Pic](/results/Result2.PNG)
+
+![layer Pic](/results/Result3.PNG)
+
+![layer Pic](/results/Result4.PNG)
+
+![layer Pic](/results/Result5.PNG)
+
+![layer Pic](/results/Result6.PNG)
+
 ### Justification
 In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
 - _Are the final results found stronger than the benchmark result reported earlier?_
