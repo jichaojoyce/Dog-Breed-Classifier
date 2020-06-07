@@ -9,7 +9,7 @@ June 7, 2020
 ### Project Overview
 When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? I have definetly... To solve the real-world images classifier problem, this project uses Convolutional Neural Networks (CNNs) and transfer learning to build a pipeline to process real-world, user-supplied images. This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
 ### Problem Statement
-The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
+The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. This is a multi-class classification problem. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
 
 The tasks involved are the following:
 Step 0: Import Datasets
@@ -26,10 +26,12 @@ Accuracy is a common metric for classifiers, defined as the true breed predictio
 
 ![\large accuracy = \frac{\text{true breed prediction}}{\text{dataset size}}](https://render.githubusercontent.com/render/math?math=%5Clarge%20accuracy%20%3D%20%5Cfrac%7B%5Ctext%7Btrue%20breed%20prediction%7D%7D%7B%5Ctext%7Bdataset%20size%7D%7D)
 
-The loss function is categorical cross-entroy loss. 
+The categorical cross-entroy loss is used to train a CNN to output a probability over the C classes for each image. 
 
+![category Pic](categorical.png)
+
+The RMSprop optimizer is used to mimimum the loss function. Different as the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
 In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
