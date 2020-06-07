@@ -19,19 +19,20 @@
 This dog breed classifier project is part of Data Science Nanodegree Program by Udacity applying the deep learning algorithms.
 The initial dataset contains the dog pictures and human face for model training are downloaded from the below links.
 
-[dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
+[dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
 
-[human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).
+[human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). .  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 
 This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input. The Convolutional Neural Networks (CNNs) and transfer learning are applied to build a pipeline to process real-world, user-supplied images.
 
-The Project contains five files:
+The Project contains six files:
 
 1. 'dog_app.ipynb'. The Jupyter notebook builds the web application step by step.   
 2. 'dog_app.html'. The html version of the 'dog_app.ipynb' Jupyter notebook. 
 3. 'Dog Breed Classifier Report.md'. The report on this project walking you through the problem and methods of developing the model.
 4. 'results' folder. The 6 figures downloaded from Google as inputs for model testing. 
-5. 'doc' folder. The folder contains relevant pictures related to the report. 
+5. 'doc' folder. The folder contains relevant pictures related to the report.
+6. 'saved_models' folder. The folder contains the trained four models in this project. 
 
 <a name="getting_started"></a>
 ## Getting Started
@@ -41,6 +42,11 @@ The Project contains five files:
 * Machine Learning Libraries: sklearn.datasets, keras, numpy, glob, random, cv2, PIL, extract_bottleneck_features
 * Database Libraqries: tqdm
 * Web App and Data Visualization: matplotlib.pyplot
+
+You also need to download the 'bottleneck_features'.
+
+[VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
+
 <a name="installing"></a>
 ### Installing
 Clone this GIT repository:
