@@ -12,7 +12,7 @@
 3. [Authors](#authors)
 4. [License](#license)
 5. [Acknowledgement](#acknowledgement)
-
+6. [Examples](#example)
 <a name="descripton"></a>
 ## Description
 
@@ -73,3 +73,12 @@ Feel free to use it!
 ## Acknowledgements
 
 Credicts give to [Udacity](https://www.udacity.com/).
+
+## Examples
+A classification example for human figure. 
+
+![example](/results/Result1.PNG)
+
+A classification example for dog figure with Boykin spaniel breed. 
+
+![example](/results/result6.PNG)
