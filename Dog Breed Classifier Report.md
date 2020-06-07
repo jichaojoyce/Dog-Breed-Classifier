@@ -9,7 +9,7 @@ June 7, 2020
 ### Project Overview
 When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? I have definetly... To solve the real-world images classifier problem, this project uses Convolutional Neural Networks (CNNs) and transfer learning to build a pipeline to process real-world, user-supplied images. This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
 ### Problem Statement
-The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. This is a multi-class classification problem. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
+The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. This is a multi-class classification problem. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. Consider that even a human would have great difficulty in distinguishing between a Brittany and a Welsh Springer Spaniel. It is not difficult to find other dog breed pairs with minimal inter-class variation. Also, even the same breed, the dogs' color may be different. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
 
 The tasks involved are the following:
 Step 0: Import Datasets
@@ -50,14 +50,23 @@ Totally, there are 8351 total dog images, belong to 133 dog categories. In contr
 
 ### Exploratory Visualization
 * Detect Humans
-The OpenCV's implementation of Haar feature-based cascade classifiers is used to detect human faces in images. The pre-trained face detector 'haarcascade_frontalface_alt.xml' is used to find the number of faces. 
+The OpenCV's implementation of Haar feature-based cascade classifiers is used to detect human faces in images. The pre-trained face detector 'haarcascade_frontalface_alt.xml' is used to detect the humans' faces. 
+
+Here 'Number of faces detected: 1'
+
 ![human Pic](humandetector.png)
 
+When using the human files and dog files to test the performace of human face detector. It shows 100.0% accuracy to detect human face in human files and 11.0% detect human face in dog files.
+
+* Detect Dogs
+A pre-trained ResNet-50 model is used to detect dogs in images. Given an image, this pre-trained ResNet-50 model returns a prediction (derived from the available categories in ImageNet) for the object that is contained in the image. Similary, the same data in detect humans are used to test the ability of detecting dogs. It shows 0.0% dog face is detected in human_files, and 100.0% dog face is detected in dog_files.
+
 ### Algorithms and Techniques
-In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
-- _Are the algorithms you will use, including any default variables/parameters in the project clearly defined?_
-- _Are the techniques to be used thoroughly discussed and justified?_
-- _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
+The images are dividied every pixel in every image by 255. A CNN achitecture is established. 
+
+![layer Pic](layers.png)
+
+The target was to to achieve a CNN with >1% accuracy. The network described above achieved 1.0766% without any fine-tuning of parameters and without any augmentation on the data.
 
 ### Benchmark
 In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
