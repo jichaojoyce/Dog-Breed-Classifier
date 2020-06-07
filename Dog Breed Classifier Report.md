@@ -1,5 +1,5 @@
 # Data Scientist Nanodegree
-## Capstone Project
+## Capstone Project: Dog Breed Classifier 
 Chao Ji 
 June 7, 2020
 
