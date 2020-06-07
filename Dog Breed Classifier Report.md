@@ -20,7 +20,7 @@ Step 7: Test Your Algorithm
 ### Metrics
 Accuracy is a common metric for classifiers, it takes into account the true positives and true negatives with equal weight.
 
-![equation] accuracy=\frac{true positives + true negatives}{dataset size}
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; accuracy=\frac{true positives + true negatives}{dataset size}" title="\Large accuracy=\frac{true positives + true negatives}{dataset size}" />
 
 ## II. Analysis
 _(approx. 2-4 pages)_
