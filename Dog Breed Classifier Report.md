@@ -22,8 +22,8 @@ Step 7: Test Your Algorithm
 ### Metrics
 Accuracy is a common metric for classifiers, defined as the true breed prediction among the whole predictions.
 
-<sub>\frac{true breed prediction}{dataset size}</sub>
-< img src="https://render.githubusercontent.com/render/math?math= accuracy = \frac{true breed prediction}{dataset size}">
+<sub>&\frac{true breed prediction}{dataset size}</sub>
+<img src="https://render.githubusercontent.com/render/math?math= accuracy = \frac{true breed prediction}{dataset size}">
 The loss function is categorical cross-entroy loss. 
 
 ## II. Analysis
