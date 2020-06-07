@@ -1,5 +1,6 @@
 # Data Scientist Nanodegree
 ## Capstone Project
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 Chao Ji 
 June 7, 2020
 ![Definition Pic](sample_dog_output.png)
