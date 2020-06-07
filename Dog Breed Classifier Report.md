@@ -44,7 +44,7 @@ The categorical cross-entroy loss, also called softmax loss is used to train a C
  
 ![category Pic](/doc/categorical.png)
 
-The RMSprop optimizer is used to mimimum the loss function. Different as the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
+The RMSprop optimizer is used to minimize the loss function. Different from the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
 
 ## II. Analysis
 ### Data Exploration
@@ -54,7 +54,7 @@ The dog pictures and human face for this model cross-validation are downloaded f
 
 [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).
 
-Totally, there are 8351 total dog images, belong to 133 dog categories. In contrast, there are 13233 total human images. The dog dataset is divided into traning, validation and test dataset. Among them, 6680 dog images are for training, 835 dog images are for validation and 836 dog images are for images test. 
+Totally, there are 8351 total dog images, belong to 133 dog categories. In contrast, there are 13233 total human images. The dog dataset is divided into training, validation, and test dataset. Among them, 6680 dog images are for training, 835 dog images are for validation and 836 dog images are for images test. 
 
 ### Exploratory Visualization
 * Detect Humans
@@ -64,43 +64,43 @@ Here 'Number of faces detected: 1'
 
 ![human Pic](/doc/humandetector.png)
 
-When using the human files and dog files to test the performace of human face detector. It shows 100.0% accuracy to detect human face in human files and 11.0% detect human face in dog files.
+When using the human files and dog files to test the performance of human face detector. It shows 100.0% accuracy to detect a human face in human files and 11.0% detect a human face in dog files.
 
 * Detect Dogs
-A pre-trained ResNet-50 model is used to detect dogs in images. Given an image, this pre-trained ResNet-50 model returns a prediction (derived from the available categories in ImageNet) for the object that is contained in the image. Similary, the same data in detect humans are used to test the ability of detecting dogs. It shows 0.0% dog face is detected in human_files, and 100.0% dog face is detected in dog_files.
+A pre-trained ResNet-50 model is used to detect dogs in images. Given an image, this pre-trained ResNet-50 model returns a prediction (derived from the available categories in ImageNet) for the object that is contained in the image. Similarly, the same data to detect humans are used to test the ability to detect dogs. It shows 0.0% dog face is detected in human_files, and 100.0% dog face is detected in dog_files.
 
 ### Algorithms and Techniques
 #### Data Preprocessing
 * CNN architecture 
 
-The images are dividied every pixel in every image by 255. A CNN achitecture is established. The network I chose has 3 convolution layers and 3 maximum pooling layers to reduce the dimensionality and increase the depth. The filters used were 16, 32, 64 respectively.
+The images are divided every pixel in every image by 255. A CNN architecture is established. The network I chose has 3 convolution layers and 3 maximum pooling layers to reduce the dimensionality and increase the depth. The filters used were 16, 32, 64 respectively.
 
 The  final layer has 133 nodes to match our classes of dog breeds and a softmax activation loss function was obtained to estimate probabilities for each of the classes.
 
 ![layer Pic](/doc/layers.png)
 
-The target was to to achieve a CNN with >1% accuracy. The network described above achieved 1.0766% without any fine-tuning of parameters and without any augmentation on the data. This limited accuracy may due to I only used 10 epochs and the limited layer.
+The target was to achieve a CNN with >1% accuracy. The network described above achieved 1.0766% without any fine-tuning of parameters and without any augmentation on the data. This limited accuracy may due to I only used 10 epochs and a limited layer.
 
 #### Implementation
 * Train a CNN using transfer learning
-Several pre-trained networks model VGG-16 is used as a fixed feature extractor for use with keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
+Several pre-trained networks model VGG-16 is used as a fixed feature extractor for use with Keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
 
 ![layer Pic](/doc/layers1.PNG)
 
 The test accuracy using VGG-16 is 39.71%. To increase the accuracy, other models are tested. 
 
 #### Refinement
-VGG-19 and ResNet-50 pre-trained models are applied for tranfer learning. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in below figures. The test accuracy using VGG-19 and ResNet-50 are 49.16% and 81.22% respectively. The transfer training does improve the accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
+VGG-19 and ResNet-50 pre-trained models are applied for transfer learning. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in the below figures. The test accuracy using VGG-19 and ResNet-50 is 49.16% and 81.22% respectively. Transfer training does improve accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
 
 ![layer Pic](/doc/layers2.PNG)
 
 ![layer Pic](/doc/layer3.PNG)
 
-* Overall classification
+#### Overall classification
 
-The new model using the ResNet-50 model as the first layer is well trained. Then algorithms are wrote to help classify the pictures. The concepts are: 
+The new model using the ResNet-50 model as the first layer is well trained. Then algorithms are written to help classify the pictures. The concepts are: 
 1. first determines whether the image contains a human, dog, or neither using the pre-defined 'dog_detector' and 'face_detector'.
-2. if human or dog is defined, then the pre-trained model is used to predict the similar dog-breed for human and the dog-breed for dog. 
+2. if a human or dog is defined, then the pre-trained model is used to predict the similar dog-breed for humans and the dog-breed for the dog. 
 
 ## IV. Results
 ### Model Evaluation and Validation
@@ -130,13 +130,13 @@ Several figures are tested.
 ![layer Pic](/results/result6.PNG)
 
 ### Justification
-All the results are reasonable that they agreed with the facts. Only the teddy figure is identified as Cocker_spaniel. Although te teddy and Cocker_spaniel has some common characters but they are still different. This is because there is no Teddy type in the categories and there is no Teddy training figures. More tests may be needed to draw a more general conculsion. 
+All the results are reasonable that they agreed with the facts. Only the teddy figure is identified as Cocker_spaniel. Although te teddy and Cocker_spaniel have some common characters, they are still different. This is because there is no Teddy type in the categories and there are no Teddy training figures. More tests may be needed to draw a more general conclusion.
 
 ## V. Conclusion
 Overall, we consider our results to be a success given the high number of breeds in this classification problem. The trained model can effectively predict the correct breed within the 133 different breeds contained in the dataset.
 
 ### Reflection
-This project starts with the dog and human detector, and ends with a well-trained model to classify the figures into dog or human or neither and predict the accurate breed prediction. The overall model accuracy is 81.22% using the ResNet-50 method. This accuracy could still be improved by adding layers, increasing the training data and epoaches, and applying regularizations.
+This project starts with the dog and human detector and ends with a well-trained model to classify the figures into a dog or human or neither and predict the accurate breed prediction. The overall model accuracy is 81.22% using the ResNet-50 method. This accuracy could still be improved by adding layers, increasing the training data and epoaches, and applying regularizations.
 
 ### Improvement
 * The model could be improved by adding its ability to classify pictures with noise. 
