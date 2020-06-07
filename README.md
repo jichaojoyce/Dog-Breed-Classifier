@@ -16,7 +16,7 @@
 <a name="descripton"></a>
 ## Description
 
-This dog breed classifier project is part of Data Science Nanodegree Program by Udacity applying the deep learning algorithms.
+This dog breed classifier project is part of Data Science Nanodegree Program by Udacity applying the deep learning algorithms. The medium publish can be found [Dog breed classifier](https://medium.com/@jichaojoyce/dog-breed-classifier-3d9af7ce5c).
 The initial dataset contains the dog pictures and human face for model training are downloaded from the below links.
 
 [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
