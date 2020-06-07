@@ -36,7 +36,7 @@ Accuracy is a common metric for classifiers, defined as the true breed predictio
 
 ![\large accuracy = \frac{\text{true breed prediction}}{\text{dataset size}}](https://render.githubusercontent.com/render/math?math=%5Clarge%20accuracy%20%3D%20%5Cfrac%7B%5Ctext%7Btrue%20breed%20prediction%7D%7D%7B%5Ctext%7Bdataset%20size%7D%7D)
 
-Ideally, we would like to create a CNN that can achieve results of over 60% accuary. That is, it can correclt identify the dog breed 6 times out of 10. We will be using the accuracy metric on the testing dataset to measure the model performance. 
+Ideally, we would like to create a CNN that can achieve results of over 60% accuracy. That is, it can correctly identify the dog breed 6 times out of 10. We will be using the accuracy metric on the testing dataset to measure the model performance. 
 
 * Categorical cross-entroy loss
 
