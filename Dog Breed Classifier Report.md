@@ -28,20 +28,22 @@ Accuracy is a common metric for classifiers, defined as the true breed predictio
 Ideally, we would like to create a CNN that can achieve results of over 60% accuary. That is, it can correclt identify the dog breed 6 times out of 10. We will be using the accuracy metric on the testing dataset to measure the model performance. 
 
 The categorical cross-entroy loss, also called softmax loss is used to train a CNN to output a probability over the C classes for each image. 
-
+ 
 ![category Pic](categorical.png)
 
 The RMSprop optimizer is used to mimimum the loss function. Different as the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
 
 ## II. Analysis
 ### Data Exploration
-The 
+The dog pictures and human face for this model cross-validation are downloaded from the below links.
+[dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
+[human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).
+
+Totally, there are 8351 total dog images, belong to 133 dog categories. In contrast, there are 13233 total human images. The dog dataset is divided into traning, validation and test dataset. Among them, 6680 dog images are for training, 835 dog images are for validation and 836 dog images are for images test. 
 
 ### Exploratory Visualization
-In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant characteristic or feature about the dataset or input data?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
+
+The OpenCV's implementation of Haar feature-based cascade classifiers is used to detect human faces in images. The pre-trained face detector 'haarcascade_frontalface_alt.xml' is used to find the number of faces. 
 
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
