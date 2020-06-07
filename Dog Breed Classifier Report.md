@@ -62,6 +62,7 @@ When using the human files and dog files to test the performace of human face de
 A pre-trained ResNet-50 model is used to detect dogs in images. Given an image, this pre-trained ResNet-50 model returns a prediction (derived from the available categories in ImageNet) for the object that is contained in the image. Similary, the same data in detect humans are used to test the ability of detecting dogs. It shows 0.0% dog face is detected in human_files, and 100.0% dog face is detected in dog_files.
 
 ### Algorithms and Techniques
+#### Data Preprocessing
 * CNN architecture 
 
 The images are dividied every pixel in every image by 255. A CNN achitecture is established. The network I chose has 3 convolution layers and 3 maximum pooling layers to reduce the dimensionality and increase the depth. The filters used were 16, 32, 64 respectively.
@@ -72,12 +73,16 @@ The  final layer has 133 nodes to match our classes of dog breeds and a softmax 
 
 The target was to to achieve a CNN with >1% accuracy. The network described above achieved 1.0766% without any fine-tuning of parameters and without any augmentation on the data. This limited accuracy may due to I only used 10 epochs and the limited layer.
 
+#### Implementation
 * Train a CNN using transfer learning
-Several pre-trained networks models such as VGG-16, VGG-19, and ResNet-50 are used as a fixed feature extractor for use with keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
+Several pre-trained networks model VGG-16 is used as a fixed feature extractor for use with keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
 
 ![layer Pic](/doc/layers1.PNG)
 
-The test accuracy using VGG-16 is 39.71%. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in below figures. The test accuracy using VGG-19 and ResNet-50 are 49.16% and 81.22% respectively. The transfer training does improve the accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
+The test accuracy using VGG-16 is 39.71%. To increase the accuracy, other models are tested. 
+
+#### Refinement
+VGG-19 and ResNet-50 pre-trained models are applied for tranfer learning. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in below figures. The test accuracy using VGG-19 and ResNet-50 are 49.16% and 81.22% respectively. The transfer training does improve the accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
 
 ![layer Pic](/doc/layers2.PNG)
 
@@ -131,4 +136,3 @@ This project starts with the dog and human detector, and ends with a well-traine
 * The model could be improved by refining the minimum algorithms...
 -----------
 
-**Before submitting, ask yourself. . .**
