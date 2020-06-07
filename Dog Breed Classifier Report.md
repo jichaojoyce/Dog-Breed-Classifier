@@ -34,7 +34,7 @@ Ideally, we would like to create a CNN that can achieve results of over 60% accu
 
 The categorical cross-entroy loss, also called softmax loss is used to train a CNN to output a probability over the C classes for each image. 
  
-![category Pic](categorical.png)
+![category Pic](/doc/categorical.png)
 
 The RMSprop optimizer is used to mimimum the loss function. Different as the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
 
@@ -54,7 +54,7 @@ The OpenCV's implementation of Haar feature-based cascade classifiers is used to
 
 Here 'Number of faces detected: 1'
 
-![human Pic](humandetector.png)
+![human Pic](/doc/humandetector.png)
 
 When using the human files and dog files to test the performace of human face detector. It shows 100.0% accuracy to detect human face in human files and 11.0% detect human face in dog files.
 
@@ -68,20 +68,20 @@ The images are dividied every pixel in every image by 255. A CNN achitecture is 
 
 The  final layer has 133 nodes to match our classes of dog breeds and a softmax activation loss function was obtained to estimate probabilities for each of the classes.
 
-![layer Pic](layers.png)
+![layer Pic](/doc/layers.png)
 
 The target was to to achieve a CNN with >1% accuracy. The network described above achieved 1.0766% without any fine-tuning of parameters and without any augmentation on the data. This limited accuracy may due to I only used 10 epochs and the limited layer.
 
 * Train a CNN using transfer learning
 Several pre-trained networks models such as VGG-16, VGG-19, and ResNet-50 are used as a fixed feature extractor for use with keras. The last convolutional output of the pre-trained models is fed as input to our model as the first layer for extra training. A global average pooling layer and a fully connected layer are added to the model structure. 
 
-![layer Pic](layers1.png)
+![layer Pic](/doc/layers1.png)
 
 The test accuracy using VGG-16 is 39.71%. Similar approaches are applied to add the VGG-19 and ResNet-50 models as the first layer in below figures. The test accuracy using VGG-19 and ResNet-50 are 49.16% and 81.22% respectively. The transfer training does improve the accuracy and speed. Hence, the ResNet-50 model is applied for the next dog breed classification prediction. 
 
-![layer Pic](layers2.png)
+![layer Pic](/doc/layers2.png)
 
-![layer Pic](layers3.png)
+![layer Pic](/doc/layers3.png)
 
 * Overall classification
 
@@ -92,7 +92,12 @@ The new model using the ResNet-50 model as the first layer is well trained. Then
 ## IV. Results
 ### Model Evaluation and Validation
 Several figures are tested. 
-![layer Pic](\result\result1.png)
+![layer Pic](/results/result1.png)
+![layer Pic](/results/result2.png)
+![layer Pic](/results/result3.png)
+![layer Pic](/results/result4.png)
+![layer Pic](/results/result5.png)
+![layer Pic](/results/result6.png)
 ### Justification
 In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
 - _Are the final results found stronger than the benchmark result reported earlier?_
