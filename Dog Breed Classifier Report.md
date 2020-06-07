@@ -25,20 +25,17 @@ Step 7: Test Your Algorithm
 Accuracy is a common metric for classifiers, defined as the true breed prediction among the whole predictions.
 
 ![\large accuracy = \frac{\text{true breed prediction}}{\text{dataset size}}](https://render.githubusercontent.com/render/math?math=%5Clarge%20accuracy%20%3D%20%5Cfrac%7B%5Ctext%7Btrue%20breed%20prediction%7D%7D%7B%5Ctext%7Bdataset%20size%7D%7D)
+Ideally, we would like to create a CNN that can achieve results of over 60% accuary. That is, it can correclt identify the dog breed 6 times out of 10. We will be using the accuracy metric on the testing dataset to measure the model performance. 
 
-The categorical cross-entroy loss is used to train a CNN to output a probability over the C classes for each image. 
+The categorical cross-entroy loss, also called softmax loss is used to train a CNN to output a probability over the C classes for each image. 
 
 ![category Pic](categorical.png)
 
 The RMSprop optimizer is used to mimimum the loss function. Different as the gradient descent, the RMSprop optimizer restricts the oscillations in the vertical direction. 
-## II. Analysis
 
+## II. Analysis
 ### Data Exploration
-In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
-- _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
-- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
-- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
-- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
+The 
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
