@@ -81,7 +81,7 @@ The test accuracy using VGG-16 is 39.71%. Similar approaches are applied to add 
 
 ![layer Pic](/doc/layers2.PNG)
 
-![layer Pic](/doc/layers3.PNG)
+![layer Pic](/doc/layer3.PNG)
 
 * Overall classification
 
@@ -103,7 +103,7 @@ Several figures are tested.
 
 ![layer Pic](/results/Result5.PNG)
 
-![layer Pic](/results/Result6.PNG)
+![layer Pic](/results/result6.PNG)
 
 ### Justification
 In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
