@@ -42,8 +42,9 @@ The dog pictures and human face for this model cross-validation are downloaded f
 Totally, there are 8351 total dog images, belong to 133 dog categories. In contrast, there are 13233 total human images. The dog dataset is divided into traning, validation and test dataset. Among them, 6680 dog images are for training, 835 dog images are for validation and 836 dog images are for images test. 
 
 ### Exploratory Visualization
-
+* Detect Humans
 The OpenCV's implementation of Haar feature-based cascade classifiers is used to detect human faces in images. The pre-trained face detector 'haarcascade_frontalface_alt.xml' is used to find the number of faces. 
+![human Pic](humandetector.png)
 
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
