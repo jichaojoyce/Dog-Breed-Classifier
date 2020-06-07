@@ -92,16 +92,27 @@ The new model using the ResNet-50 model as the first layer is well trained. Then
 ## IV. Results
 ### Model Evaluation and Validation
 Several figures are tested. 
+* Detect Human correct
 
 ![layer Pic](/results/Result1.PNG)
 
+* Detect Human correct
+
 ![layer Pic](/results/Result2.PNG)
+
+* Detect Dog correct
 
 ![layer Pic](/results/Result3.PNG)
 
+* Detect Dog correct
+
 ![layer Pic](/results/Result4.PNG)
 
+* Detect Dog Fair
+
 ![layer Pic](/results/Result5.PNG)
+
+* Detect Dog correct
 
 ![layer Pic](/results/result6.PNG)
 
