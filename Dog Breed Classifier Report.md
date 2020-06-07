@@ -2,10 +2,10 @@
 ## Capstone Project
 Joe Udacity  
 December 31st, 2020
-
+![Definition Pic](BIM.png)
 ## I. Definition
 ### Project Overview
-When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input. If the input image is a human face, then the application will return the breed of dog that most resembles this person 
+When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
 ### Problem Statement
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
 - _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
