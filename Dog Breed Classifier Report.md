@@ -41,7 +41,9 @@ The RMSprop optimizer is used to mimimum the loss function. Different as the gra
 ## II. Analysis
 ### Data Exploration
 The dog pictures and human face for this model cross-validation are downloaded from the below links.
+
 [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
+
 [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).
 
 Totally, there are 8351 total dog images, belong to 133 dog categories. In contrast, there are 13233 total human images. The dog dataset is divided into traning, validation and test dataset. Among them, 6680 dog images are for training, 835 dog images are for validation and 836 dog images are for images test. 
