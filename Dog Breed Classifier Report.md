@@ -20,11 +20,12 @@ Step 6: Write your Algorithm
 Step 7: Test Your Algorithm
 
 ### Metrics
-Accuracy is a common metric for classifiers, it takes into account the true positives and true negatives with equal weight.
+Accuracy is a common metric for classifiers, defined as the true breed prediction among the whole predictions.
 
-$$\frac{true breed prediction}{dataset size}$$
+<sub>\frac{true breed prediction}{dataset size}</sub>
 
-This metric was used when evaluating classifier because false 
+The categorical cross-entroy
+
 ## II. Analysis
 _(approx. 2-4 pages)_
 
