@@ -1,13 +1,15 @@
 # Data Scientist Nanodegree
 ## Capstone Project
-Joe Udacity  
+Chao Ji 
 June 7, 2020
 ![Definition Pic](sample_dog_output.png)
 ## I. Definition
 ### Project Overview
-When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? To solve the real-world images classifier problem, this project uses Convolutional Neural Networks (CNNs) and transfer learning to build a pipeline to process real-world, user-supplied images. This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
+When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? I have definetly... To solve the real-world images classifier problem, this project uses Convolutional Neural Networks (CNNs) and transfer learning to build a pipeline to process real-world, user-supplied images. This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input.If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. 
 ### Problem Statement
-The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. The tasks involved are the following:
+The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
+
+The tasks involved are the following:
 Step 0: Import Datasets
 Step 1: Detect Humans
 Step 2: Detect Dogs
@@ -20,8 +22,9 @@ Step 7: Test Your Algorithm
 ### Metrics
 Accuracy is a common metric for classifiers, it takes into account the true positives and true negatives with equal weight.
 
-![Equation Pic](eq1.png)
+$\frac{true breed prediction}{dataset size}$
 
+This metric was used when evaluating classifier because false 
 ## II. Analysis
 _(approx. 2-4 pages)_
 
