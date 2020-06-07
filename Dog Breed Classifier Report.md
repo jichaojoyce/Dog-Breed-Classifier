@@ -22,7 +22,7 @@ Step 7: Test Your Algorithm
 ### Metrics
 Accuracy is a common metric for classifiers, it takes into account the true positives and true negatives with equal weight.
 
-$\frac{true breed prediction}{dataset size}$
+$$\frac{true breed prediction}{dataset size}$$
 
 This metric was used when evaluating classifier because false 
 ## II. Analysis
