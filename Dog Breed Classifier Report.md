@@ -1,6 +1,5 @@
 # Data Scientist Nanodegree
 ## Capstone Project
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 Chao Ji 
 June 7, 2020
 ![Definition Pic](sample_dog_output.png)
@@ -22,9 +21,7 @@ Step 7: Test Your Algorithm
 
 ### Metrics
 Accuracy is a common metric for classifiers, defined as the true breed prediction among the whole predictions.
-```Markdown
-$a=1$
-```
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 The loss function is categorical cross-entroy loss. 
 
 ## II. Analysis
