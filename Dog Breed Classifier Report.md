@@ -12,13 +12,21 @@ When you are walking, a cuty dog comes and you are curious about its breed. Do y
 The goal is to create a web application to (1) recognize whether the picture is a human or a dog; and (2)identify a breed of dog or a resembled dog breed of human. This is a multi-class classification problem. Differenting between breeds is a difficult problem. That is, the breeds are not the obvious characteristics that can be observed as the size, shape and color. Consider that even a human would have great difficulty in distinguishing between a Brittany and a Welsh Springer Spaniel. It is not difficult to find other dog breed pairs with minimal inter-class variation. Also, even the same breed, the dogs' color may be different. But this project is meaningful that same methods can be applied to identify breeds of other species like plants and birds. To solve the problem, CNNs and transfer learning are applied because their advantages to assist with keypoint detection in dogs, namely in indentifying eyes, nose, and ears. 
 
 The tasks involved are the following:
+
 Step 0: Import Datasets
+
 Step 1: Detect Humans
+
 Step 2: Detect Dogs
+
 Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
+
 Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
+
 Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+
 Step 6: Write your Algorithm
+
 Step 7: Test Your Algorithm
 
 ### Metrics
