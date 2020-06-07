@@ -3,7 +3,7 @@
 Chao Ji 
 June 7, 2020
 
-![Definition Pic](sample_dog_output.png)
+![Definition Pic](/doc/sample_dog_output.png)
 
 ## I. Definition
 ### Project Overview
