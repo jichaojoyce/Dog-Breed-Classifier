@@ -1,16 +1,11 @@
-# Machine Learning Engineer Nanodegree
+# Data Scientist Nanodegree
 ## Capstone Project
 Joe Udacity  
-December 31st, 2050
+December 31st, 2020
 
 ## I. Definition
-_(approx. 1-2 pages)_
-
 ### Project Overview
-In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
-- _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
-- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
-
+When you are walking, a cuty dog comes and you are curious about its breed. Do you have an experience like that? This project aims to create a web application that is able to identify a breed of dog if given a photo or image as input. If the input image is a human face, then the application will return the breed of dog that most resembles this person 
 ### Problem Statement
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
 - _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
